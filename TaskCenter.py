@@ -422,8 +422,8 @@ class TaskCenter:
     def runTaskCenter(self):
         self.signIn()  # 签到打卡
         if self.dailyTask() == True:
-            # self.runViewTask()          # 浏览任务
-            # self.runShareTask()         # 分享任务
+            self.runViewTask()          # 浏览任务
+            self.runShareTask()         # 分享任务
             self.runCumulativeSignIn()  # 小程序签到
             # self.runViewPush()          # 浏览推送任务(已下架)
 
